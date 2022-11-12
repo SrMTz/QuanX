@@ -1,6 +1,6 @@
 # > /*  APP开屏广告拦截，APP启动广告拦截！
 # > 某些APP要清除缓存或者重新安装APP，拦截广告才会生效！  
-# > 更新时间  2022.11.05
+# > 更新时间  2022.11.08  18:55
 # > */  
 
 # > 光大银行阳光惠生活
@@ -318,16 +318,10 @@ HOST,ad.51wnl-cq.com, reject
 HOST,adextra.51wnl-cq.com, reject
 HOST,log.51wnl-cq.com, reject
 HOST,r.51wnl-cq.com, reject
-# > 屏蔽苹果系统更新
-host, ns.itunes.apple.com, reject
-host, appldnld.apple.com, reject
-host, mesu.apple.com, reject
-host, xp.apple.com, reject
-host, gdmf.apple.com, reject
-HOST-SUFFIX,iadsdk.apple.com, reject
-HOST-SUFFIX,ads.internal.unity3d.com, reject
-HOST-SUFFIX,ads.prd.ie.internal.unity3d.com, reject
-HOST-SUFFIX,unityads.unity3d.com, reject
+
+# > 屏蔽苹果系统更新 已经拿出去单独配置
+# https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/apple.conf
+
 # > 优酷
 HOST-SUFFIX,atm.youku.com, reject
 HOST,ad.mobile.youku.com, reject
@@ -9698,3 +9692,5 @@ HOST-SUFFIX,gzads.com, reject
 HOST-SUFFIX,gz-data.com, reject
 # > GrowingIO
 HOST-SUFFIX,giocdn.com, reject
+# > 深圳通微信小程序
+HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
