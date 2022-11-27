@@ -1,7 +1,17 @@
-# > /*  APP开屏广告拦截，APP启动广告拦截！
-# > 某些APP要清除缓存或者重新安装APP，拦截广告才会生效！  
-# > 更新时间  2022.11.08  18:55
-# > */  
+################################################################
+# 重写作用：针对部分APP开屏广告，应用内广告进行拦截
+# 重要提示：某些APP要清除缓存或者重新安装APP，拦截广告才会生效！
+# 项目地址：https://github.com/fmz200/wool_scripts
+# 交流群组：https://t.me/quguanggao
+# 更新时间：2022.11.21 20:36
+###############################################################
+# > "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
+# > "reject-200"    策略返回 HTTP 状态码 200,不附带任何额外内容
+# > "reject-img"    策略返回 HTTP 状态码 200,同时附带 1px gif
+# > "reject-dict"   策略返回 HTTP 状态码 200,同时附带一个空的 JSON 对象
+# > "reject-array"  策略返回 HTTP 状态码 200,同时附带一个空的 JSON 数组
+###############################################################
+
 
 # > 光大银行阳光惠生活
 host-keyword, talk.bz.getui.com, reject
@@ -1137,9 +1147,9 @@ HOST-SUFFIX,cm.adcommon.bilibili.com, reject
 HOST-SUFFIX,cm.game.bilibili.com, reject
 HOST-SUFFIX,cm.track.biligame.bilibili.com, reject
 # > 快手
-HOST-SUFFIX,yximgs.com, reject
+# HOST-SUFFIX,yximgs.com, reject
 HOST-SUFFIX,e.kuaishou.com, reject
-HOST,js-ad.a.yximgs.com, reject
+# HOST,js-ad.a.yximgs.com, reject
 HOST-SUFFIX,cm.downloader.commercial.kuaishou.com, reject
 HOST-SUFFIX,cm.ad.gifshow.com, reject
 HOST-SUFFIX,cm.kwad.com, reject
@@ -1164,7 +1174,7 @@ host-suffix, atrace.chelaile.net.cn, reject
 host, logs.chelaile.net.cn, reject
 host, ad.chelaile.net.cn, reject
 # > 铁路12306
-HOST, ad.12306.cn, REJECT
+
 # > 两步路
 HOST-SUFFIX, admobile.top, REJECT
 # > 抖音
